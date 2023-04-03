@@ -1,0 +1,340 @@
+:root {
+    --premaryColor: #ff274b;
+    --seconColor: #f7bcf7;
+    --lightColor: #ffffff;
+    --bgColor: #171e1c;
+    --bgColor-2: #22282a;
+    --padding: 8%
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*......................
+......... text .........
+......................*/
+html {
+    font-family: "Josefin Sans";
+    font-size: 16px;
+    color: var(--lightColor);
+}
+
+span {
+    color: var(--premaryColor);
+}
+
+h1 {
+    font-size: 2.65rem;
+    margin: 1.7 0;
+}
+
+h2 {
+    font-size: 2.2rem;
+    letter-spacing: 0.12rem;
+    cursor: pointer;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 3.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+    letter-spacing: 0.12rem;
+    color: var(--seconColor);
+}
+
+h5 {
+    font-size: 1.37rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+}
+
+p {
+    color: var(--seconColor);
+    letter-spacing: 1px;
+    line-height: 1.8rem;
+    font-size: 1rem;
+}
+/*......................
+......... menu .........
+......................*/
+
+nav {
+    padding-top: 2.8rem;
+    padding-right: var(--padding);
+    padding-left: var(--padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0.8rem 1.5rem;
+}
+
+nav ul li a {
+    color: var(--lightColor);
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.4s;
+}
+
+nav ul li a:hover {
+    color: var(--premaryColor);
+}
+
+/*......................
+......... Home .........
+......................*/
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bgColor);
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*......................
+......... button .........
+......................*/
+
+
+
+.subs {
+    background-color: var(--premaryColor);
+    text-decoration: none;
+    color: var(--lightColor);
+    font-weight: bold;
+    padding: 0.81rem 1.87rem;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    transition: 0.4s;
+}
+
+.subs:hover {
+    background-color: transparent;
+    border: 2px solid var(--premaryColor);
+}
+
+/*......................
+......... Contents .........
+......................*/
+
+
+.content {
+    flex-grow: 1;
+    padding: 0 var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-text {
+    position: relative;
+    bottom: 20%;
+}
+
+
+/*......................
+......... Social media .........
+......................*/
+
+
+
+.social {
+    margin-top: 3.5rem;
+}
+
+.social img {
+    margin-right: 1rem;
+    width: 2.5rem;
+    transition: 0.4s;
+}
+
+.social img:hover {
+    transform: scale(1.2);
+}
+
+/*......................
+......... Home Section .........
+......................*/
+
+
+.home .container-images {
+    width: 45%;
+    height: 90%;
+    position: relative;
+    align-self: flex-end;
+}
+
+.home .container-images img {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    left: 50%;
+    transform: translatex(-50%);
+    transition: bottom 1s, left 1s;
+
+}
+
+.home .container-images:hover .shape {
+    bottom: 40px;
+}
+
+.home .container-images:hover .pic {
+    left: 45%;
+}
+
+/*......................
+......... About .........
+......................*/
+
+.about {
+    background-color: var(--bgColor-2);
+    padding: 2rem var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+
+.about .container-images {
+    width: 35%; 
+
+}
+
+.about .container-images img {
+    width: 90%;
+
+
+}
+
+
+.about .content-text {
+width: 35%;
+}
+
+/*......................
+......... Services .........
+......................*/
+
+.services {
+    background-color: var(--bgColor);
+    padding: var(--padding);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.box {
+display: flex;
+justify-content: space-between;
+}
+
+.card {
+    width: 300px;
+    background-color: var(--bgColor-2);
+    border: 20xp;
+    padding: 1.3rem;
+    text-align: center;
+}
+
+.card em{
+    font-size: 3.12rem;
+    text-align: center;
+    color: var(--premaryColor);
+    margin: 2rem;
+}
+
+.per {
+    text-align: left;
+}
+
+/*......................
+......... Skills .........
+......................*/
+
+.skills {
+    background-color: var(--bgColor-2);
+    padding: 2rem var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.skills .container-images {
+    width: 35%; 
+}
+
+.skills .container-images img {
+    width: 90%;
+}
+
+.skills .container-skills {
+    width: 70%;
+}
+
+.content-skills {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+}
+
+.skill {
+    width: 80px;
+    height: 80px;
+    background-color: var(--lightColor);
+    border: 50%;
+    border-radius: 3rem;
+    margin: 0 2rem 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill img {
+    width: 60%;
+}
+
+
+/* ....... footer ........*/
+
+footer {
+    padding: 2rem var(--padding);
+    background-color: var(--bgColor);
+}
+
+footer .content-footer {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+footer .content-footer p {
+    color: var(--lightColor);
+    text-align: center;
+    width: 500px;
+    margin-top: 1rem;
+}
+
+footer .content-footer .end {
+    color: var(--premaryColor);
+    margin-top: 1rem;
+}
+
+
+
+
+
+
